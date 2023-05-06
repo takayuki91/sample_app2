@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SampleApp2</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body id="<%= controller.controller_name %>-<%= controller.action_name %>">
+    <header>
+      <h1 class="headline">ようこそBookersへ！</h1>
+    </header>
+    
+    <h4>Bookersでは、さまざまな書籍に関するあなたの意見や<br>
+印象を共有し交換することができます</h4>
+
+<%= link_to "start",new_list_path %>
+  <main>
+    <%= yield %>
+  </main> 
+  
+  </body>
+</html>
