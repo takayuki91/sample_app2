@@ -1,3 +1,3 @@
 # sample_app2
-- Railsチュートリアル
-- 3章〜
+- DMMWEBCAMPのカリキュラム
+- bookers2の復習
